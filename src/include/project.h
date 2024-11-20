@@ -1,6 +1,5 @@
-#include "pr1.h"
-#include "prj.h"
-
+#include "library.h"
+#include "mail.h"
 
 struct mail* process_myQ(struct mail* head);
 void display_myQ(struct mail* head);

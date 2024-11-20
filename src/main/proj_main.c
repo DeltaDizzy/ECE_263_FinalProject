@@ -1,9 +1,9 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "pr1.h"
-#include "pr2.h"
-#include "prj.h"
+#include "library.h"
+#include "mail.h"
+#include "project.h"
 
 void print_main_menu(void);
 

@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "pr2.h"
+#include "project.h"
 
 struct mail* process_myQ(struct mail* head) {
   return NULL;
