@@ -1,3 +1,5 @@
+#pragma once
+
 #include "mail.h"
 
 void assignData(struct mail*, int);

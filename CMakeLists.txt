@@ -7,7 +7,7 @@ set(CMAKE_BUILD_TYPE Debug)
 
 set(SRC_DIR src/main)
 
-add_executable(SemesterProject ${SRC_DIR}/proj_main.c ${SRC_DIR}/prj2.c)
+add_executable(SemesterProject ${SRC_DIR}/proj_main.c ${SRC_DIR}/project.c)
 
 target_compile_options(SemesterProject PRIVATE -WX)
 

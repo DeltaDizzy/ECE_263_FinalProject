@@ -1,4 +1,5 @@
-#include "library.h"
+#pragma once
+
 #include "mail.h"
 
 struct mail* process_myQ(struct mail* head);
