@@ -77,7 +77,28 @@ struct mail* delete_allmailOfFrom(struct mail* head, char* fromName) {
 }
 
 struct mail* sort_byPriority(struct mail* head) {
-  return NULL;
+  struct mail* current = head;
+  struct mail* outer = head;
+  int sorted = 1;
+  // struct mail* prev;
+  //  descending order, so higher priorty comes first
+  //  if next.priority > current.priority, swap
+  while (outer != NULL) {
+    while (current != NULL) {
+      if (current->nextmail->priority > current->priority) {
+        // swaps VALUES
+        swap_values(current->nextmail, current);
+        sorted = 0;
+      }
+      current = current->nextmail;
+    }
+    if (sorted == 1) {
+      // the flag was never deactivated, so the list is fully sorted
+      break;
+    }
+    outer = outer->nextmail;
+  }
+  return head;
 }
 
 void terminate_write(struct mail* head) {
